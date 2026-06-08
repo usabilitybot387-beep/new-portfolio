@@ -7,7 +7,9 @@ const possibleSrcs = [
   path.join(projectRoot, 'dist', 'client', 'assets'),
   path.join(projectRoot, 'dist', 'assets'),
 ];
-const dest = path.join(projectRoot, 'public', 'assets');
+// Copy to both locations: public/ for local dev, dist/client/ for Vercel production
+const publicDest = path.join(projectRoot, 'public', 'assets');
+const distDest = path.join(projectRoot, 'dist', 'client', 'assets');
 
 let found = null;
 for (const p of possibleSrcs) {
@@ -39,9 +41,16 @@ function copyDirectoryRecursive(srcDir, destDir) {
   }
 }
 
-if (fs.existsSync(dest)) {
-  fs.rmSync(dest, { recursive: true, force: true });
+// Clean and copy to public/ for local development
+if (fs.existsSync(publicDest)) {
+  fs.rmSync(publicDest, { recursive: true, force: true });
 }
+copyDirectoryRecursive(found, publicDest);
+console.log(`Copied ${found} to ${publicDest}`);
 
-copyDirectoryRecursive(found, dest);
-console.log(`Copied ${found} to ${dest}`);
+// Clean and copy to dist/client/ for Vercel production deployment
+if (fs.existsSync(distDest)) {
+  fs.rmSync(distDest, { recursive: true, force: true });
+}
+copyDirectoryRecursive(found, distDest);
+console.log(`Copied ${found} to ${distDest}`);
