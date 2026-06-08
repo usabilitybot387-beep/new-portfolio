@@ -1,5 +1,6 @@
 {
   "name": "tanstack_start_ts",
+  "description": "Portfolio website built with Vite, React, and TanStack Start.",
   "private": true,
   "sideEffects": false,
   "type": "module",
