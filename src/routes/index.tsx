@@ -110,17 +110,65 @@ function SectionLabel({ index, children }: { index?: string; children: React.Rea
 
 function ScreenImage({ src, alt }: { src: string; alt: string }) {
   const [loaded, setLoaded] = useState(true);
+  const [palette, setPalette] = useState<string[]>([]);
+
+  useEffect(() => {
+    if (!src) return;
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.src = src;
+    img.onload = () => {
+      try {
+        const canvas = document.createElement("canvas");
+        const w = 120;
+        const h = Math.max(120, Math.round((img.height / img.width) * 120));
+        canvas.width = w;
+        canvas.height = h;
+        const ctx = canvas.getContext("2d");
+        if (!ctx) return;
+        ctx.drawImage(img, 0, 0, w, h);
+        const data = ctx.getImageData(0, 0, w, h).data;
+        const counts: Record<string, number> = {};
+        // sample pixels with a step to speed up
+        const step = 4 * 6; // rgba * step pixels
+        for (let i = 0; i < data.length; i += step) {
+          const r = data[i];
+          const g = data[i + 1];
+          const b = data[i + 2];
+          const a = data[i + 3];
+          if (a < 128) continue; // ignore transparent
+          const key = `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
+          counts[key] = (counts[key] || 0) + 1;
+        }
+        const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 6).map((e) => e[0]);
+        setPalette(sorted);
+        setLoaded(true);
+      } catch (e) {
+        setLoaded(true);
+      }
+    };
+    img.onerror = () => setLoaded(false);
+  }, [src]);
 
   return (
     <div className="relative h-full w-full bg-border/10 overflow-hidden">
       {loaded ? (
-        <img
-          src={src}
-          alt={alt}
-          loading="lazy"
-          className="h-full w-full object-cover"
-          onError={() => setLoaded(false)}
-        />
+        <div className="h-full w-full flex flex-col gap-3">
+          <img src={src} alt={alt} loading="lazy" className="h-[70%] w-full object-cover" onError={() => setLoaded(false)} />
+          {palette.length > 0 && (
+            <div className="px-2 pb-2 flex items-center gap-2">
+              {palette.map((c) => (
+                <div key={c} title={c} className="flex-0 h-8 w-8 rounded-md border border-border" style={{ background: c }} />
+              ))}
+            </div>
+          )}
+          <div className="px-2 pb-2 grid grid-cols-4 gap-2">
+            <div className="rounded-md p-2 text-xs text-center bg-background border border-border">Normal</div>
+            <div className="rounded-md p-2 text-xs text-center bg-background border border-border" style={{ filter: "grayscale(1)" }}>Grayscale</div>
+            <div className="rounded-md p-2 text-xs text-center bg-background border border-border" style={{ filter: "sepia(0.6)" }}>Sepia</div>
+            <div className="rounded-md p-2 text-xs text-center bg-background border border-border" style={{ filter: "contrast(1.4) saturate(1.2)" }}>Vivid</div>
+          </div>
+        </div>
       ) : (
         <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-slate-950/5 text-sm text-muted-foreground p-4">
           <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-900/10 text-2xl">📷</div>
