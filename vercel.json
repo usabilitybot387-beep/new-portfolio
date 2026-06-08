@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/client/client",
   "functions": {
     "api/index.ts": {
       "includeFiles": "dist/client/server/**"

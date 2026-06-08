@@ -3,7 +3,7 @@ Vercel deployment notes
 Quick summary
 
 - Build command: npm run build
-- Output directory: dist/client
+- Output directory: dist/client/client
 - Edge function: api/index.ts (configured as edge in vercel.json)
 
 Steps to deploy via Vercel (web UI)
@@ -12,7 +12,7 @@ Steps to deploy via Vercel (web UI)
 2. Go to https://vercel.com/new and import the repository.
 3. In the "Root Directory" set the project root where this `package.json` lives (if you connect the monorepo root). For this project the root is the repository folder containing `package.json`.
 4. Set the Build Command to: `npm run build`
-5. Set the Output Directory to: `dist/client`
+5. Set the Output Directory to: `dist/client/client`
 6. Leave Environment Variables blank unless you need any runtime secrets; add them in Vercel Project Settings.
 7. Deploy. Vercel will run the build and publish static files, while `api/index.ts` will be deployed as an Edge Function per `vercel.json`.
 
@@ -34,7 +34,7 @@ vercel --prod
 
 Notes & troubleshooting
 
-- `npm run build` succeeds locally and generates `dist/client` and `dist/server`.
+- `npm run build` succeeds locally and generates `dist/client/client` (static files) and `dist/client/server` (server bundle).
 - If the deployment serves an unexpected path, confirm the Vercel project "Root Directory" is the folder with `package.json` and `vercel.json`.
 - Large chunks warning from Vite is a performance note only — consider code-splitting if you want smaller bundles.
 
