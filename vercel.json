@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "functions": {
+    "api/index.ts": {
+      "includeFiles": "dist/client/server/**"
+    }
+  },
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "^/api/(.*)$",
+      "dest": "/api/index.ts"
+    },
+    {
+      "src": "^/(.*)$",
+      "dest": "/api/index.ts"
+    }
+  ]
+}
