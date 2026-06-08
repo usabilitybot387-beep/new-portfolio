@@ -22,10 +22,26 @@ if (!found) {
   process.exit(1);
 }
 
+function copyDirectoryRecursive(srcDir, destDir) {
+  if (!fs.existsSync(destDir)) {
+    fs.mkdirSync(destDir, { recursive: true });
+  }
+
+  for (const entry of fs.readdirSync(srcDir, { withFileTypes: true })) {
+    const srcPath = path.join(srcDir, entry.name);
+    const destPath = path.join(destDir, entry.name);
+
+    if (entry.isDirectory()) {
+      copyDirectoryRecursive(srcPath, destPath);
+    } else if (entry.isFile()) {
+      fs.copyFileSync(srcPath, destPath);
+    }
+  }
+}
+
 if (fs.existsSync(dest)) {
   fs.rmSync(dest, { recursive: true, force: true });
 }
 
-fs.mkdirSync(dest, { recursive: true });
-fs.cpSync(found, dest, { recursive: true });
+copyDirectoryRecursive(found, dest);
 console.log(`Copied ${found} to ${dest}`);

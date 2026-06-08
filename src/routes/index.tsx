@@ -110,7 +110,8 @@ function SectionLabel({ index, children }: { index?: string; children: React.Rea
 
 function ScreenImage({ src, alt }: { src: string; alt: string }) {
   const [loaded, setLoaded] = useState(true);
-  const [palette, setPalette] = useState<string[]>([]);
+  const defaultPalette = ["#111827", "#1f2937", "#4b5563", "#cbd5e1", "#f8fafc", "#fb7185"];
+  const [palette, setPalette] = useState<string[]>(defaultPalette);
 
   useEffect(() => {
     if (!src) return;
@@ -129,19 +130,18 @@ function ScreenImage({ src, alt }: { src: string; alt: string }) {
         ctx.drawImage(img, 0, 0, w, h);
         const data = ctx.getImageData(0, 0, w, h).data;
         const counts: Record<string, number> = {};
-        // sample pixels with a step to speed up
-        const step = 4 * 6; // rgba * step pixels
+        const step = 4 * 6;
         for (let i = 0; i < data.length; i += step) {
           const r = data[i];
           const g = data[i + 1];
           const b = data[i + 2];
           const a = data[i + 3];
-          if (a < 128) continue; // ignore transparent
+          if (a < 128) continue;
           const key = `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
           counts[key] = (counts[key] || 0) + 1;
         }
         const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 6).map((e) => e[0]);
-        setPalette(sorted);
+        if (sorted.length) setPalette(sorted);
         setLoaded(true);
       } catch (e) {
         setLoaded(true);
@@ -1039,6 +1039,50 @@ function Gallery({ onNavigate }: { onNavigate: (href: string) => void }) {
     link?: string;
     html?: string;
     overlay?: boolean;
+    preview?: {
+      badges: string[];
+      colors: string[];
+      description?: string;
+    };
+  };
+
+  const previewDefaults: Record<string, { badges: string[]; colors: string[]; description: string }> = {
+    "UI/UX": {
+      badges: ["Prototype", "Micro-interactions", "User flow"],
+      colors: ["#0ea5e9", "#7dd3fc", "#f8fafc"],
+      description: "Clean, mobile-first UI work with intuitive flows and polished interaction details.",
+    },
+    Branding: {
+      badges: ["Logo", "Identity", "Visual system"],
+      colors: ["#f59e0b", "#f97316", "#fb7185"],
+      description: "Brand systems with strong visual direction, color, and typography.",
+    },
+    "Graphic Design": {
+      badges: ["Poster", "Layout", "Typography"],
+      colors: ["#fde68a", "#fbbf24", "#fb7185"],
+      description: "Graphic design pieces blending text, imagery, and visual emphasis.",
+    },
+    Illustration: {
+      badges: ["Character", "Concept", "Style"],
+      colors: ["#fbcfe8", "#a5f3fc", "#fde68a"],
+      description: "Creative illustration work focusing on expressive form and color.",
+    },
+    "Pencil Drawings": {
+      badges: ["Sketch", "Linework", "Texture"],
+      colors: ["#111827", "#4b5563", "#cbd5e1"],
+      description: "Detailed pencil studies highlighting shading, contrast, and form.",
+    },
+    "Video Editing": {
+      badges: ["Motion", "Transitions", "Effects"],
+      colors: ["#0f172a", "#475569", "#94a3b8"],
+      description: "Video edits with animation, visual effects, and storytelling rhythm.",
+    },
+  };
+
+  const defaultPreview = {
+    badges: ["Visual sample", "Creative direction"],
+    colors: ["#cbd5e1", "#94a3b8", "#475569"],
+    description: "A polished visual sample with design details.",
   };
 
   const items: GalleryItem[] = [
@@ -1079,7 +1123,11 @@ function Gallery({ onNavigate }: { onNavigate: (href: string) => void }) {
   ];
   const cats = ["All", "UI/UX", "Branding", "Graphic Design", "Illustration", "Pencil Drawings", "Video Editing"];
   const [active, setActive] = useState("All");
-  const filtered = items.filter((i) => active === "All" || i.c === active);
+  const itemsWithPreview = items.map((item) => ({
+    ...item,
+    preview: item.preview ?? previewDefaults[item.c] ?? defaultPreview,
+  }));
+  const filtered = itemsWithPreview.filter((i) => active === "All" || i.c === active);
   return (
     <section className="border-t border-border">
       <div className="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
@@ -1177,6 +1225,29 @@ function Gallery({ onNavigate }: { onNavigate: (href: string) => void }) {
                   <span className="font-display text-lg">{i.t}</span>
                 </div>
               )}
+              <div className="mt-3 rounded-2xl border border-border bg-background p-4">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{i.c}</span>
+                  <span className="text-sm font-semibold text-foreground">{i.t}</span>
+                </div>
+                {i.preview?.description && <p className="mt-3 text-sm text-muted-foreground">{i.preview.description}</p>}
+                {i.preview?.badges && (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {i.preview.badges.map((badge) => (
+                      <span key={badge} className="rounded-full border border-border bg-card px-2 py-1 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                        {badge}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                {i.preview?.colors && (
+                  <div className="mt-3 flex items-center gap-2">
+                    {i.preview.colors.map((color) => (
+                      <span key={color} title={color} className="h-3 w-3 rounded-full border border-border" style={{ background: color }} />
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
