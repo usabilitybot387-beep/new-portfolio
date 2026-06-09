@@ -1102,7 +1102,7 @@ function Gallery({ onNavigate }: { onNavigate: (href: string) => void }) {
     { t: "pencil Bro", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/1657564720.png" },
     { t: "CFYG LOGO", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/6178259720.png" },
     { t: "Cringe Diary Branding", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/4114288720.jpg" },
-    { t: "Artico Branding", c: "Branding", h: "tall", img: "https://cdn.corenexis.com/files/c/7453142720.webp" },
+    { t: "Art Zone Branding", c: "Branding", h: "tall", img: "https://cdn.corenexis.com/files/c/7453142720.webp" },
     { t: "WhatsApp Logo", c: "Branding", h: "short", img: "https://cdn.corenexis.com/files/c/5872615720.png" },
     { t: "Instagram Logo", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/2498329720.png" },
     { t: "YouTube Logo", c: "Branding", h: "short", img: "https://cdn.corenexis.com/files/c/9773725720.png" },
@@ -1114,8 +1114,8 @@ function Gallery({ onNavigate }: { onNavigate: (href: string) => void }) {
     { t: "Birthday Special Offers", c: "Graphic Design", h: "med", img: "https://cdn.corenexis.com/files/c/5641271720.png" },
     { t: "Halwa Delivery Poster", c: "Graphic Design", h: "short", img: "https://cdn.corenexis.com/files/c/8391319720.png" },
     { t: "Halwa Order Poster", c: "Graphic Design", h: "med", img: "https://cdn.corenexis.com/files/c/5516334720.png" },
-    { t: "Motion Design 01", c: "Video Editing", h: "med", video: "https://www.image2url.com/r2/default/videos/1780876071385-aec130b7-b779-43b9-9190-f1fd1279aecd.mp4" },
-    { t: "Pixel Explanation", c: "Video Editing", h: "med", video: "https://www.image2url.com/r2/default/videos/1780809323036-ad177736-7da6-41e9-b3a2-f290a32f8163.mp4" },
+    { t: "Pixel Explained", c: "Video Editing", h: "med", video: "https://www.image2url.com/r2/default/videos/1780876071385-aec130b7-b779-43b9-9190-f1fd1279aecd.mp4" },
+    { t: "Cringe diary Intro Draft", c: "Video Editing", h: "med", video: "https://www.image2url.com/r2/default/videos/1780809323036-ad177736-7da6-41e9-b3a2-f290a32f8163.mp4" },
     { t: "Registers", c: "Video Editing", h: "med", video: "https://www.image2url.com/r2/default/videos/1780809012287-69971c74-8dce-4277-b97e-b1eb94180141.mp4" },
     { t: "3D Gaming Intro", c: "Video Editing", h: "med", video: "https://www.image2url.com/r2/default/videos/1780807066142-52622ac3-eb8a-41bf-8ebb-45dfe8a62544.mp4" },
     { t: "Cringe Diary Intro Draft", c: "Video Editing", h: "med", video: "https://www.image2url.com/r2/default/videos/1780808029386-ff75674a-698f-472a-852b-f66e56426966.mp4" },
@@ -1288,7 +1288,7 @@ function Skills() {
   const groups = [
     { t: "UI/UX Design", items: ["User Research", "User Flows", "Wireframing", "Prototyping", "Information Architecture", "Responsive Design"] },
     { t: "Visual Design", items: ["Branding", "Typography", "Poster Design", "Social Media Design", "Marketing Creatives"] },
-    { t: "Tools", items: ["Figma", "Photoshop", "Illustrator", "CapCut", "Canva", "VS Code", "GitHub"] },
+    { t: "Tools", items: ["Figma", "Photoshop", "Illustrator", "CapCut", "Canva", "VS Code", "GitHub", "Draw.IO"] },
   ];
   return (
     <section id="skills" className="border-t border-border">
