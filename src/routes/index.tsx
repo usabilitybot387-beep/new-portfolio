@@ -246,7 +246,7 @@ function Hero() {
             <div className="h-16 w-28 rounded-lg bg-gradient-to-br from-[oklch(0.94_0.024_248)] to-[oklch(0.88_0.04_250)] grid place-items-center text-[10px] font-mono text-primary">ARTICO</div>
           </div>
           <div className="hidden sm:block absolute -right-4 bottom-32 rounded-2xl bg-white/40 backdrop-blur-xl border border-white/30 shadow-soft p-3 animate-float" style={{ animationDelay: "1.5s" }}>
-            <div className="h-14 w-24 rounded-lg bg-foreground grid place-items-center text-[10px] font-mono text-white/90">RESUME.AI</div>
+            <div className="h-14 w-24 rounded-lg bg-foreground grid place-items-center text-[10px] font-mono text-white/90">PLACEMENT PRIME</div>
           </div>
           <div className="hidden md:block absolute -right-2 -top-4 rounded-2xl bg-white/40 backdrop-blur-xl border border-white/30 shadow-soft p-3 animate-float" style={{ animationDelay: "0.8s" }}>
             <div className="h-12 w-20 rounded-lg bg-[oklch(0.85_0.12_60)] grid place-items-center text-[10px] font-mono text-foreground">HALWA</div>
