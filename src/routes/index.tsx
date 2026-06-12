@@ -1107,7 +1107,7 @@ function Gallery({ onNavigate }: { onNavigate: (href: string) => void }) {
     { t: "Instagram Logo", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/2498329720.png" },
     { t: "YouTube Logo", c: "Branding", h: "short", img: "https://cdn.corenexis.com/files/c/9773725720.png" },
     { t: "Pink FF Branding", c: "Branding", h: "tall", img: "https://cdn.corenexis.com/files/c/1864847720.jpg" },
-    { t: "Graphic Design Work", c: "Graphic Design", h: "tall", img: "https://www.image2url.com/r2/default/images/1781235841020-a2f0b5ea-2d75-4b94-bd85-a17456f22293.png" },
+    { t: "Burger King poster", c: "Graphic Design", h: "tall", img: "https://www.image2url.com/r2/default/images/1781235841020-a2f0b5ea-2d75-4b94-bd85-a17456f22293.png" },
     { t: "VLSI Workshop Design", c: "Graphic Design", h: "med", img: "https://cdn.corenexis.com/files/c/2861438720.png" },
     { t: "Combo Offer Design", c: "Graphic Design", h: "tall", img: "https://cdn.corenexis.com/files/c/2416631720.png" },
     { t: "Halwa Product Design", c: "Graphic Design", h: "med", img: "https://cdn.corenexis.com/files/c/5355276720.png" },
