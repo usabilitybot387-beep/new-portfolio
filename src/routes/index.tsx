@@ -198,7 +198,7 @@ function Hero() {
           </p>
           <p className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-muted-foreground">
             Designing intuitive digital experiences, meaningful interfaces, and
-            impactful visual identities.
+            impactful visual identities is my hobby and yeah go down boss don't stuck here 😄.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="mailto:workhard112233@gmail.com" className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-5 py-3 text-sm font-medium shadow-soft hover:shadow-lift hover:-translate-y-0.5 transition">
@@ -1107,6 +1107,7 @@ function Gallery({ onNavigate }: { onNavigate: (href: string) => void }) {
     { t: "Instagram Logo", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/2498329720.png" },
     { t: "YouTube Logo", c: "Branding", h: "short", img: "https://cdn.corenexis.com/files/c/9773725720.png" },
     { t: "Pink FF Branding", c: "Branding", h: "tall", img: "https://cdn.corenexis.com/files/c/1864847720.jpg" },
+    { t: "Graphic Design Work", c: "Graphic Design", h: "tall", img: "https://www.image2url.com/r2/default/images/1781235841020-a2f0b5ea-2d75-4b94-bd85-a17456f22293.png" },
     { t: "VLSI Workshop Design", c: "Graphic Design", h: "med", img: "https://cdn.corenexis.com/files/c/2861438720.png" },
     { t: "Combo Offer Design", c: "Graphic Design", h: "tall", img: "https://cdn.corenexis.com/files/c/2416631720.png" },
     { t: "Halwa Product Design", c: "Graphic Design", h: "med", img: "https://cdn.corenexis.com/files/c/5355276720.png" },
