@@ -506,6 +506,129 @@ function Artico({ onClose }: { onClose: () => void }) {
         </Reveal>
       </div>
 
+      {/* ── User Personas ── */}
+      <Reveal>
+        <div className="mt-10">
+          <div className="text-[11px] font-mono uppercase tracking-[0.18em] text-primary mb-4">User Personas</div>
+          <h4 className="font-display text-2xl mb-6">Who we designed for</h4>
+          <div className="grid md:grid-cols-2 gap-6">
+
+            {/* Persona 1 – Ananya Sharma (Audience) */}
+            <div className="rounded-2xl border border-border bg-background overflow-hidden shadow-sm hover:shadow-lift transition-shadow duration-300">
+              <div className="bg-gradient-to-br from-blue-900 to-blue-700 px-6 pt-6 pb-5 flex items-center gap-4">
+                <img
+                  src="https://www.image2url.com/r2/default/images/1782372440972-5e272cf0-e442-4384-bdaf-7d2935a72c35.png"
+                  alt="Ananya Sharma"
+                  className="w-16 h-16 rounded-full object-cover border-2 border-white/30 shadow-md flex-shrink-0"
+                />
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-blue-300 mb-0.5">Audience Persona</div>
+                  <div className="font-display text-xl text-white leading-tight">Ananya Sharma</div>
+                  <div className="text-blue-200 text-xs mt-0.5">Marketing Executive · Age 26 · Bengaluru</div>
+                </div>
+              </div>
+              <div className="px-6 pt-5 pb-6 space-y-4">
+                <blockquote className="text-sm italic text-muted-foreground border-l-2 border-blue-500 pl-3">
+                  "I don't just want beautiful artwork—I want to know the artist behind it and trust that it's genuinely theirs."
+                </blockquote>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-blue-600 mb-2">Goals</div>
+                  <ul className="space-y-1 text-sm text-muted-foreground">
+                    {["Discover authentic and talented artists", "Purchase original artwork with confidence", "Stay inspired through creative content", "Build a personal collection of meaningful art", "Support independent artists"].map((g) => (
+                      <li key={g} className="flex items-start gap-2"><span className="mt-1 text-[oklch(0.72_0.17_145)]">✓</span>{g}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-blue-600 mb-2">Pain Points</div>
+                  <ul className="space-y-1 text-sm text-muted-foreground">
+                    {["Difficult to identify trustworthy artists", "Too much repetitive or AI-generated content", "Limited transparency about an artist's experience", "Unsure whether artwork is original", "Existing platforms focus more on popularity than credibility"].map((p) => (
+                      <li key={p} className="flex items-start gap-2"><span className="mt-1 text-rose-400">✕</span>{p}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-blue-600 mb-2">Motivations</div>
+                  <div className="flex flex-wrap gap-2">
+                    {["Finding unique artwork", "Supporting genuine creators", "Being part of a creative community", "Connecting with artists directly"].map((m) => (
+                      <span key={m} className="rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs text-blue-700">{m}</span>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-blue-600 mb-2">Preferred Platforms</div>
+                  <div className="flex flex-wrap gap-2">
+                    {["Instagram", "Pinterest", "Behance", "Etsy"].map((pl) => (
+                      <span key={pl} className="rounded-full bg-blue-100 border border-blue-200 px-3 py-1 text-xs text-blue-700 font-medium">{pl}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="rounded-xl bg-blue-50 border border-blue-200 px-4 py-3 text-xs text-blue-700">
+                  <span className="font-semibold">User Journey:</span> Discover → Follow → Engage → Purchase
+                </div>
+              </div>
+            </div>
+
+            {/* Persona 2 – Arjun Verma (Artist) */}
+            <div className="rounded-2xl border border-border bg-background overflow-hidden shadow-sm hover:shadow-lift transition-shadow duration-300">
+              <div className="bg-gradient-to-br from-amber-900 to-amber-700 px-6 pt-6 pb-5 flex items-center gap-4">
+                <img
+                  src="https://www.image2url.com/r2/default/images/1782372555314-9bf71c04-49b4-4318-941c-59024b6b55ba.png"
+                  alt="Arjun Verma"
+                  className="w-16 h-16 rounded-full object-cover border-2 border-white/30 shadow-md flex-shrink-0"
+                />
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-amber-300 mb-0.5">Artist Persona</div>
+                  <div className="font-display text-xl text-white leading-tight">Arjun Verma</div>
+                  <div className="text-amber-200 text-xs mt-0.5">Freelance Digital Artist · Age 28 · Hyderabad</div>
+                </div>
+              </div>
+              <div className="px-6 pt-5 pb-6 space-y-4">
+                <blockquote className="text-sm italic text-muted-foreground border-l-2 border-amber-500 pl-3">
+                  "I don't want to compete for likes—I want my skills and dedication to define my reputation."
+                </blockquote>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-amber-700 mb-2">Goals</div>
+                  <ul className="space-y-1 text-sm text-muted-foreground">
+                    {["Build a credible artist profile", "Showcase original artwork professionally", "Gain peer validation and recognition", "Become a Verified Artist", "Unlock the ability to sell artwork"].map((g) => (
+                      <li key={g} className="flex items-start gap-2"><span className="mt-1 text-[oklch(0.72_0.17_145)]">✓</span>{g}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-amber-700 mb-2">Pain Points</div>
+                  <ul className="space-y-1 text-sm text-muted-foreground">
+                    {["Difficult to stand out on traditional social platforms", "Likes and followers don't reflect artistic skill", "Limited opportunities to build credibility", "Buyers hesitate to trust unknown artists", "No structured path from showcasing work to selling it"].map((p) => (
+                      <li key={p} className="flex items-start gap-2"><span className="mt-1 text-rose-400">✕</span>{p}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-amber-700 mb-2">Motivations</div>
+                  <div className="flex flex-wrap gap-2">
+                    {["Growing as an artist", "Receiving meaningful recognition", "Building trust with collectors", "Creating a sustainable creative career"].map((m) => (
+                      <span key={m} className="rounded-full bg-amber-50 border border-amber-200 px-3 py-1 text-xs text-amber-700">{m}</span>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-amber-700 mb-2">Preferred Platforms</div>
+                  <div className="flex flex-wrap gap-2">
+                    {["Behance", "Instagram", "ArtStation", "Pinterest"].map((pl) => (
+                      <span key={pl} className="rounded-full bg-amber-100 border border-amber-200 px-3 py-1 text-xs text-amber-700 font-medium">{pl}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="rounded-xl bg-amber-50 border border-amber-200 px-4 py-3 text-xs text-amber-700">
+                  <span className="font-semibold">User Journey:</span> Create → Validate → Level Up → Become Verified → Unlock Store → Sell
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </Reveal>
+
       <Reveal>
         <div className="mt-10">
           <InfoBlock label="Competition" title="Competitive Analysis">
