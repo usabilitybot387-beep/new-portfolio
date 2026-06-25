@@ -747,22 +747,21 @@ function PlacementPrime({ onClose }: { onClose: () => void }) {
 
             {/* Persona 1 – Arjun Kumar */}
             <div className="rounded-2xl border border-border bg-background overflow-hidden shadow-sm hover:shadow-lift transition-shadow duration-300">
-              {/* Header strip */}
-              <div className="bg-gradient-to-r from-slate-900 to-slate-700 px-6 pt-6 pb-14 relative">
-                <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-slate-400 mb-1">Persona 01</div>
-                <div className="font-display text-xl text-white">Arjun Kumar</div>
-                <div className="text-slate-300 text-xs mt-0.5">Final-Year ECE Student · Age 22 · Visakhapatnam</div>
-              </div>
-              {/* Avatar – pulled up from the strip */}
-              <div className="flex justify-center -mt-10 mb-2">
+              {/* Header strip — image inside, no overflow clipping */}
+              <div className="bg-gradient-to-br from-slate-900 to-slate-700 px-6 pt-6 pb-5 flex items-center gap-4">
                 <img
                   src="https://www.image2url.com/r2/default/images/1782369865363-192d6b5f-d825-4760-be40-4ac955a2c924.png"
                   alt="Arjun Kumar"
-                  className="w-20 h-20 rounded-full object-cover border-4 border-background shadow-md"
+                  className="w-16 h-16 rounded-full object-cover border-2 border-white/30 shadow-md flex-shrink-0"
                 />
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-slate-400 mb-0.5">Persona 01</div>
+                  <div className="font-display text-xl text-white leading-tight">Arjun Kumar</div>
+                  <div className="text-slate-300 text-xs mt-0.5">Final-Year ECE Student · Age 22 · Visakhapatnam</div>
+                </div>
               </div>
               {/* Body */}
-              <div className="px-6 pb-6 space-y-4">
+              <div className="px-6 pt-5 pb-6 space-y-4">
                 <blockquote className="text-sm italic text-muted-foreground border-l-2 border-primary pl-3">
                   "I know the technical concepts, but I don't know how to present them effectively."
                 </blockquote>
@@ -803,22 +802,21 @@ function PlacementPrime({ onClose }: { onClose: () => void }) {
 
             {/* Persona 2 – Sneha Reddy */}
             <div className="rounded-2xl border border-border bg-background overflow-hidden shadow-sm hover:shadow-lift transition-shadow duration-300">
-              {/* Header strip */}
-              <div className="bg-gradient-to-r from-violet-900 to-violet-700 px-6 pt-6 pb-14 relative">
-                <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-violet-300 mb-1">Persona 02</div>
-                <div className="font-display text-xl text-white">Sneha Reddy</div>
-                <div className="text-violet-200 text-xs mt-0.5">Aspiring UI/UX Designer · Age 23 · Hyderabad</div>
-              </div>
-              {/* Avatar */}
-              <div className="flex justify-center -mt-10 mb-2">
+              {/* Header strip — image inside, no overflow clipping */}
+              <div className="bg-gradient-to-br from-violet-900 to-violet-700 px-6 pt-6 pb-5 flex items-center gap-4">
                 <img
                   src="https://www.image2url.com/r2/default/images/1782369683714-4bb2cf72-1390-429c-9534-4f5b18a8e788.png"
                   alt="Sneha Reddy"
-                  className="w-20 h-20 rounded-full object-cover border-4 border-background shadow-md"
+                  className="w-16 h-16 rounded-full object-cover border-2 border-white/30 shadow-md flex-shrink-0"
                 />
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-violet-300 mb-0.5">Persona 02</div>
+                  <div className="font-display text-xl text-white leading-tight">Sneha Reddy</div>
+                  <div className="text-violet-200 text-xs mt-0.5">Aspiring UI/UX Designer · Age 23 · Hyderabad</div>
+                </div>
               </div>
               {/* Body */}
-              <div className="px-6 pb-6 space-y-4">
+              <div className="px-6 pt-5 pb-6 space-y-4">
                 <blockquote className="text-sm italic text-muted-foreground border-l-2 border-violet-500 pl-3">
                   "I have projects and skills, but I don't know how to showcase them professionally."
                 </blockquote>
