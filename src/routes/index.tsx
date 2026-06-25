@@ -738,6 +738,129 @@ function PlacementPrime({ onClose }: { onClose: () => void }) {
         </div>
       </Reveal>
 
+      {/* ── User Personas ── */}
+      <Reveal>
+        <div className="mt-10">
+          <div className="text-[11px] font-mono uppercase tracking-[0.18em] text-primary mb-4">User Personas</div>
+          <h4 className="font-display text-2xl mb-6">Who we designed for</h4>
+          <div className="grid md:grid-cols-2 gap-6">
+
+            {/* Persona 1 – Arjun Kumar */}
+            <div className="rounded-2xl border border-border bg-background overflow-hidden shadow-sm hover:shadow-lift transition-shadow duration-300">
+              {/* Header strip */}
+              <div className="bg-gradient-to-r from-slate-900 to-slate-700 px-6 pt-6 pb-14 relative">
+                <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-slate-400 mb-1">Persona 01</div>
+                <div className="font-display text-xl text-white">Arjun Kumar</div>
+                <div className="text-slate-300 text-xs mt-0.5">Final-Year ECE Student · Age 22 · Visakhapatnam</div>
+              </div>
+              {/* Avatar – pulled up from the strip */}
+              <div className="flex justify-center -mt-10 mb-2">
+                <img
+                  src="https://www.image2url.com/r2/default/images/1782369865363-192d6b5f-d825-4760-be40-4ac955a2c924.png"
+                  alt="Arjun Kumar"
+                  className="w-20 h-20 rounded-full object-cover border-4 border-background shadow-md"
+                />
+              </div>
+              {/* Body */}
+              <div className="px-6 pb-6 space-y-4">
+                <blockquote className="text-sm italic text-muted-foreground border-l-2 border-primary pl-3">
+                  "I know the technical concepts, but I don't know how to present them effectively."
+                </blockquote>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-primary mb-2">Goals</div>
+                  <ul className="space-y-1 text-sm text-muted-foreground">
+                    {["Secure a campus placement", "Improve ATS score", "Build a professional resume", "Gain confidence in interviews", "Understand recruiter expectations"].map((g) => (
+                      <li key={g} className="flex items-start gap-2"><span className="mt-1 text-[oklch(0.72_0.17_145)]">✓</span>{g}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-primary mb-2">Pain Points</div>
+                  <ul className="space-y-1 text-sm text-muted-foreground">
+                    {["Doesn't understand ATS screening", "Unsure how to structure projects", "Uses generic resume templates", "Limited interview experience", "Doesn't know which skills recruiters prioritize"].map((p) => (
+                      <li key={p} className="flex items-start gap-2"><span className="mt-1 text-rose-400">✕</span>{p}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-primary mb-2">Motivations</div>
+                  <div className="flex flex-wrap gap-2">
+                    {["Financial independence", "Career growth", "Landing a reputable job", "Standing out among peers"].map((m) => (
+                      <span key={m} className="rounded-full bg-slate-100 border border-border px-3 py-1 text-xs text-foreground">{m}</span>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-primary mb-2">Preferred Platforms</div>
+                  <div className="flex flex-wrap gap-2">
+                    {["LinkedIn", "YouTube", "Internshala", "Naukri"].map((pl) => (
+                      <span key={pl} className="rounded-full bg-primary/10 border border-primary/20 px-3 py-1 text-xs text-primary font-medium">{pl}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Persona 2 – Sneha Reddy */}
+            <div className="rounded-2xl border border-border bg-background overflow-hidden shadow-sm hover:shadow-lift transition-shadow duration-300">
+              {/* Header strip */}
+              <div className="bg-gradient-to-r from-violet-900 to-violet-700 px-6 pt-6 pb-14 relative">
+                <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-violet-300 mb-1">Persona 02</div>
+                <div className="font-display text-xl text-white">Sneha Reddy</div>
+                <div className="text-violet-200 text-xs mt-0.5">Aspiring UI/UX Designer · Age 23 · Hyderabad</div>
+              </div>
+              {/* Avatar */}
+              <div className="flex justify-center -mt-10 mb-2">
+                <img
+                  src="https://www.image2url.com/r2/default/images/1782369683714-4bb2cf72-1390-429c-9534-4f5b18a8e788.png"
+                  alt="Sneha Reddy"
+                  className="w-20 h-20 rounded-full object-cover border-4 border-background shadow-md"
+                />
+              </div>
+              {/* Body */}
+              <div className="px-6 pb-6 space-y-4">
+                <blockquote className="text-sm italic text-muted-foreground border-l-2 border-violet-500 pl-3">
+                  "I have projects and skills, but I don't know how to showcase them professionally."
+                </blockquote>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-violet-600 mb-2">Goals</div>
+                  <ul className="space-y-1 text-sm text-muted-foreground">
+                    {["Build a professional portfolio", "Showcase projects effectively", "Improve interview performance", "Increase visibility to recruiters", "Land her first design role"].map((g) => (
+                      <li key={g} className="flex items-start gap-2"><span className="mt-1 text-[oklch(0.72_0.17_145)]">✓</span>{g}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-violet-600 mb-2">Pain Points</div>
+                  <ul className="space-y-1 text-sm text-muted-foreground">
+                    {["Doesn't know portfolio best practices", "Difficulty presenting case studies", "Feels overwhelmed by placement preparation", "Unsure how recruiters evaluate designers", "Lacks confidence during interviews"].map((p) => (
+                      <li key={p} className="flex items-start gap-2"><span className="mt-1 text-rose-400">✕</span>{p}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-violet-600 mb-2">Motivations</div>
+                  <div className="flex flex-wrap gap-2">
+                    {["Build a strong professional presence", "Demonstrate creativity", "Secure a design position", "Gain industry recognition"].map((m) => (
+                      <span key={m} className="rounded-full bg-violet-50 border border-violet-200 px-3 py-1 text-xs text-violet-700">{m}</span>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-violet-600 mb-2">Preferred Platforms</div>
+                  <div className="flex flex-wrap gap-2">
+                    {["Figma", "Behance", "Dribbble", "LinkedIn"].map((pl) => (
+                      <span key={pl} className="rounded-full bg-violet-100 border border-violet-200 px-3 py-1 text-xs text-violet-700 font-medium">{pl}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </Reveal>
+
       <Reveal>
         <div className="grid md:grid-cols-2 gap-6 mt-10">
           <InfoBlock label="Research" title="Student and recruiter insights">
