@@ -269,7 +269,7 @@ function FeaturedProjects({ onSelect }: { onSelect: (id: string) => void }) {
       desc: "A credibility-driven artist ecosystem where artists earn recognition before unlocking monetization.",
       bg: "from-[oklch(0.94_0.024_248)] to-[oklch(0.88_0.04_250)]",
       stripe: "bg-primary",
-      img: "https://www.image2url.com/r2/default/images/1784006800792-dbe073ad-b92b-44ae-8a86-a9ba39e7a6f0.png",
+      img: "/artico_banner.png",
     },
     {
       id: "placement-prime",
@@ -278,7 +278,7 @@ function FeaturedProjects({ onSelect }: { onSelect: (id: string) => void }) {
       desc: "Helps students measure resume quality and interview readiness with actionable AI feedback.",
       bg: "from-[oklch(0.96_0.01_250)] to-[oklch(0.92_0.02_255)]",
       stripe: "bg-foreground",
-      img: "https://www.image2url.com/r2/default/images/1784007162235-9cf54a28-8277-4be7-af78-0d37d5894247.png",
+      img: "/placement_prime_banner.png",
     },
     {
       id: "halwa-nation",
@@ -287,7 +287,7 @@ function FeaturedProjects({ onSelect }: { onSelect: (id: string) => void }) {
       desc: "Traditional sweets brand website combining heritage storytelling with mobile-first e-commerce design.",
       bg: "from-[oklch(0.94_0.04_60)] to-[oklch(0.88_0.08_45)]",
       stripe: "bg-[oklch(0.65_0.24_50)]",
-      img: "https://www.image2url.com/r2/default/images/1784007653038-1cbd1e6c-02f1-46fc-8cc4-8cf7e34b0c7b.png",
+      img: "/halwa_nation_banner.png",
     },
   ];
   return (
@@ -395,12 +395,12 @@ function InfoBlock({ label, title, children }: { label: string; title: string; c
 
 function Artico({ onClose }: { onClose: () => void }) {
   const keyScreens = [
-    { t: "Splash Screen", d: "Artiko brand introduction and canvas initialization experience.", img: "https://www.image2url.com/r2/default/images/1784010545243-23e7b210-7e96-42cc-bb02-2d3b497dbcf7.png" },
-    { t: "Community Join", d: "Onboarding screen showing multiple sign-up options with community verification.", img: "https://www.image2url.com/r2/default/images/1784008682114-abc4ee68-e3a4-46f1-9fa6-347bfdb16b74.png" },
-    { t: "User Path Selection", d: "Choice between Artist and Audience personas with personalized discovery paths.", img: "https://www.image2url.com/r2/default/images/1784008844134-59ed85fd-7267-43db-b2b8-454c20ebead9.png" },
-    { t: "Art Style Preference", d: "Personalized discovery feed setup with art style selection and preferences.", img: "https://www.image2url.com/r2/default/images/1784008959597-b702a8dc-de9d-4539-83cd-a2eea6e0a4c7.png" },
-    { t: "Artwork Discovery", d: "Community artwork showcase and artist profiles with engagement metrics.", img: "https://www.image2url.com/r2/default/images/1784009044575-d10b3446-d080-4a5e-9680-f6a0d400095e.png" },
-    { t: "Creator Feed", d: "Artist content feed with trending and curated community highlights.", img: "https://www.image2url.com/r2/default/images/1784009096417-3d39a340-c6d8-4b3f-ac26-2299d5894f0b.png" },
+    { t: "Splash Screen", d: "Artiko brand introduction and canvas initialization experience.", img: "https://cdn.corenexis.com/files/c/8526362720.png" },
+    { t: "Community Join", d: "Onboarding screen showing multiple sign-up options with community verification.", img: "https://cdn.corenexis.com/files/c/5689332720.png" },
+    { t: "User Path Selection", d: "Choice between Artist and Audience personas with personalized discovery paths.", img: "https://cdn.corenexis.com/files/c/8679297720.png" },
+    { t: "Art Style Preference", d: "Personalized discovery feed setup with art style selection and preferences.", img: "https://cdn.corenexis.com/files/c/9796341720.png" },
+    { t: "Artwork Discovery", d: "Community artwork showcase and artist profiles with engagement metrics.", img: "https://cdn.corenexis.com/files/c/4673313720.png" },
+    { t: "Creator Feed", d: "Artist content feed with trending and curated community highlights.", img: "https://cdn.corenexis.com/files/c/9885997720.png" },
   ];
 
   return (
@@ -431,7 +431,7 @@ function Artico({ onClose }: { onClose: () => void }) {
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-3 rounded-2xl bg-blue-600/10 px-4 py-3 text-sm font-semibold text-blue-700">
-                <img src="https://www.image2url.com/r2/default/images/1784007779788-0bff04dd-98ab-4268-a8a5-57db91ec63b7.png" alt="Artico Logo" className="h-8 w-8" />
+                <img src="https://cdn.corenexis.com/files/c/9723292720.png" alt="Artico Logo" className="h-8 w-8" />
                 Artico
               </div>
               <h2 className="font-display text-4xl sm:text-5xl tracking-tight text-left">
@@ -454,7 +454,7 @@ function Artico({ onClose }: { onClose: () => void }) {
               </div>
             </div>
             <div className="rounded-[2.5rem] overflow-hidden bg-white shadow-xl border border-white/70">
-              <img src="https://www.image2url.com/r2/default/images/1784008335863-b6e26649-ca77-4430-b9ea-2b95ab840768.png" alt="Artico cover page CTA" className="w-full h-full object-cover" />
+              <img src="/artico_banner.png" alt="Artico cover page CTA" className="w-full h-full object-cover" />
               <div className="bg-background p-4 flex justify-end border-t border-border">
                 <a
                   href="https://www.figma.com/design/5eUihkSBRN2otrKOELP3jX/artico?node-id=2009-2&t=yFr2ytiGIWjMYrJF-1"
@@ -787,7 +787,7 @@ function PlacementPrime({ onClose }: { onClose: () => void }) {
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-3 rounded-2xl bg-blue-600/10 px-4 py-3 text-sm font-semibold text-blue-700">
-                <img src="https://www.image2url.com/r2/default/images/1784008022042-4c7c6277-9d41-4980-a492-8ad57a830908.png" alt="Placement Prime Logo" className="h-8 w-8" />
+                <img src="https://cdn.corenexis.com/files/c/2855955720.png" alt="Placement Prime Logo" className="h-8 w-8" />
                 Placement Prime
               </div>
               <h2 className="font-display text-4xl sm:text-5xl tracking-tight text-left">
@@ -810,7 +810,7 @@ function PlacementPrime({ onClose }: { onClose: () => void }) {
               </div>
             </div>
             <div className="rounded-[2.5rem] overflow-hidden bg-white shadow-xl border border-white/70">
-              <img src="https://www.image2url.com/r2/default/images/1784010684008-f22c7474-ee1b-4a49-9b7f-f57dea034bb0.png" alt="Placement Prime cover" className="w-full h-full object-cover" />
+              <img src="/placement_prime_banner.png" alt="Placement Prime cover" className="w-full h-full object-cover" />
               <div className="bg-background p-4 flex flex-col sm:flex-row sm:justify-end gap-3 border-t border-border">
                 <a
                   href="https://www.figma.com/design/U4mqPzTkRBUu0GUejSQ198/placement-prime?node-id=49-127&t=XRXMFBEpGXEmzom1-1"
