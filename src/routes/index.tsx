@@ -395,12 +395,12 @@ function InfoBlock({ label, title, children }: { label: string; title: string; c
 
 function Artico({ onClose }: { onClose: () => void }) {
   const keyScreens = [
-    { t: "Splash Screen", d: "Artiko brand introduction and canvas initialization experience.", img: "https://cdn.corenexis.com/files/c/8526362720.png" },
-    { t: "Community Join", d: "Onboarding screen showing multiple sign-up options with community verification.", img: "https://cdn.corenexis.com/files/c/5689332720.png" },
-    { t: "User Path Selection", d: "Choice between Artist and Audience personas with personalized discovery paths.", img: "https://cdn.corenexis.com/files/c/8679297720.png" },
-    { t: "Art Style Preference", d: "Personalized discovery feed setup with art style selection and preferences.", img: "https://cdn.corenexis.com/files/c/9796341720.png" },
-    { t: "Artwork Discovery", d: "Community artwork showcase and artist profiles with engagement metrics.", img: "https://cdn.corenexis.com/files/c/4673313720.png" },
-    { t: "Creator Feed", d: "Artist content feed with trending and curated community highlights.", img: "https://cdn.corenexis.com/files/c/9885997720.png" },
+    { t: "Splash Screen", d: "Artiko brand introduction and canvas initialization experience.", img: "/artico_screen_splash.png" },
+    { t: "Community Join", d: "Onboarding screen showing multiple sign-up options with community verification.", img: "/artico_screen_join.png" },
+    { t: "User Path Selection", d: "Choice between Artist and Audience personas with personalized discovery paths.", img: "/artico_screen_path.png" },
+    { t: "Art Style Preference", d: "Personalized discovery feed setup with art style selection and preferences.", img: "/artico_screen_style.png" },
+    { t: "Artwork Discovery", d: "Community artwork showcase and artist profiles with engagement metrics.", img: "/artico_screen_discovery.png" },
+    { t: "Creator Feed", d: "Artist content feed with trending and curated community highlights.", img: "/artico_screen_feed.png" },
   ];
 
   return (
@@ -431,7 +431,7 @@ function Artico({ onClose }: { onClose: () => void }) {
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-3 rounded-2xl bg-blue-600/10 px-4 py-3 text-sm font-semibold text-blue-700">
-                <img src="https://cdn.corenexis.com/files/c/9723292720.png" alt="Artico Logo" className="h-8 w-8" />
+                <img src="/artico_logo.png" alt="Artico Logo" className="h-8 w-8" />
                 Artico
               </div>
               <h2 className="font-display text-4xl sm:text-5xl tracking-tight text-left">
@@ -750,13 +750,13 @@ function Artico({ onClose }: { onClose: () => void }) {
 
 function PlacementPrime({ onClose }: { onClose: () => void }) {
   const screens = [
-    { t: "Log In", d: "Clean login screen with fast access to account entry.", img: "https://cdn.corenexis.com/files/c/6665885720.png" },
-    { t: "Sign Up", d: "Sign-up screen for new users with a clear onboarding path.", img: "https://cdn.corenexis.com/files/c/1786587720.png" },
-    { t: "About You", d: "Personal profile capture for student background details.", img: "https://cdn.corenexis.com/files/c/5936435720.png" },
-    { t: "Education", d: "Education input flow for resume-building credentials.", img: "https://cdn.corenexis.com/files/c/7718968720.png" },
-    { t: "Skills", d: "Skill selection screen with quick tag-based input.", img: "https://cdn.corenexis.com/files/c/7299894720.png" },
-    { t: "Experiences", d: "Experience entry screen for internships and project details.", img: "https://cdn.corenexis.com/files/c/2224576720.png" },
-    { t: "Links", d: "Professional links screen for portfolios and social profiles.", img: "https://cdn.corenexis.com/files/c/6472242720.png" },
+    { t: "Log In", d: "Clean login screen with fast access to account entry.", img: "/pp_screen_login.png" },
+    { t: "Sign Up", d: "Sign-up screen for new users with a clear onboarding path.", img: "/pp_screen_signup.png" },
+    { t: "About You", d: "Personal profile capture for student background details.", img: "/pp_screen_about.png" },
+    { t: "Education", d: "Education input flow for resume-building credentials.", img: "/pp_screen_education.png" },
+    { t: "Skills", d: "Skill selection screen with quick tag-based input.", img: "/pp_screen_skills.png" },
+    { t: "Experiences", d: "Experience entry screen for internships and project details.", img: "/pp_screen_experiences.png" },
+    { t: "Links", d: "Professional links screen for portfolios and social profiles.", img: "/pp_screen_links.png" },
   ];
   const [expanded, setExpanded] = useState<string | null>(null);
 
@@ -787,7 +787,7 @@ function PlacementPrime({ onClose }: { onClose: () => void }) {
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-3 rounded-2xl bg-blue-600/10 px-4 py-3 text-sm font-semibold text-blue-700">
-                <img src="https://cdn.corenexis.com/files/c/2855955720.png" alt="Placement Prime Logo" className="h-8 w-8" />
+                <img src="/pp_logo_cover.png" alt="Placement Prime Logo" className="h-8 w-8" />
                 Placement Prime
               </div>
               <h2 className="font-display text-4xl sm:text-5xl tracking-tight text-left">
