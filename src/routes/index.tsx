@@ -287,7 +287,7 @@ function FeaturedProjects({ onSelect }: { onSelect: (id: string) => void }) {
       desc: "Traditional sweets brand website combining heritage storytelling with mobile-first e-commerce design.",
       bg: "from-[oklch(0.94_0.04_60)] to-[oklch(0.88_0.08_45)]",
       stripe: "bg-[oklch(0.65_0.24_50)]",
-      img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/halwa_nation_banner.png",
+      img: "https://www.image2url.com/r2/default/images/1784671229662-57d3850f-bb75-4e87-8d02-5f1dcc5c7dd9.png",
     },
   ];
   return (
@@ -397,7 +397,7 @@ function Artico({ onClose }: { onClose: () => void }) {
   const keyScreens = [
     { t: "Splash Screen", d: "Artiko brand introduction and canvas initialization experience.", img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_screen_splash.png" },
     { t: "Community Join", d: "Onboarding screen showing multiple sign-up options with community verification.", img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_screen_join.png" },
-    { t: "User Path Selection", d: "Choice between Artist and Audience personas with personalized discovery paths.", img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_screen_path.png" },
+    { t: "User Path Selection", d: "Choice between Artist and Audience personas with personalized discovery paths.", img: "https://www.image2url.com/r2/default/images/1784670588787-4c867f4f-c52f-4a44-98c2-c70f887a7ada.png" },
     { t: "Art Style Preference", d: "Personalized discovery feed setup with art style selection and preferences.", img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_screen_style.png" },
     { t: "Artwork Discovery", d: "Community artwork showcase and artist profiles with engagement metrics.", img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_screen_discovery.png" },
     { t: "Creator Feed", d: "Artist content feed with trending and curated community highlights.", img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_screen_feed.png" },
@@ -431,7 +431,7 @@ function Artico({ onClose }: { onClose: () => void }) {
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-3 rounded-2xl bg-blue-600/10 px-4 py-3 text-sm font-semibold text-blue-700">
-                <img src="https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_logo.png" alt="Artico Logo" className="h-8 w-8" />
+                <img src="https://www.image2url.com/r2/default/images/1784670360775-9a909b6a-2178-4f23-b6b0-2d0b58fef93a.png" alt="Artico Logo" className="h-8 w-8" />
                 Artico
               </div>
               <h2 className="font-display text-4xl sm:text-5xl tracking-tight text-left">
@@ -787,7 +787,7 @@ function PlacementPrime({ onClose }: { onClose: () => void }) {
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-3 rounded-2xl bg-blue-600/10 px-4 py-3 text-sm font-semibold text-blue-700">
-                <img src="https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/pp_logo_cover.png" alt="Placement Prime Logo" className="h-8 w-8" />
+                <img src="https://www.image2url.com/r2/default/images/1784671064897-1b0fa6b7-9202-46cd-8156-e7658d3b60e6.png" alt="Placement Prime Logo" className="h-8 w-8" />
                 Placement Prime
               </div>
               <h2 className="font-display text-4xl sm:text-5xl tracking-tight text-left">
@@ -1333,9 +1333,9 @@ function Gallery({ onNavigate }: { onNavigate: (href: string) => void }) {
   };
 
   const items: GalleryItem[] = [
-    { t: "Mobile App UI", c: "UI/UX", h: "tall", img: "https://cdn.corenexis.com/files/c/9917575720.png", link: "#placement-prime", overlay: true },
+    { t: "Mobile App UI", c: "UI/UX", h: "tall", img: "https://www.image2url.com/r2/default/images/1784671524249-51c2dbbb-b208-4e89-b473-ea6c70604c33.png", link: "#placement-prime", overlay: true },
     { t: "Character Illustration", c: "Illustration", h: "tall", img: "https://cdn.corenexis.com/files/c/7984549720.jpg" },
-    { t: "Dashboard Concept", c: "UI/UX", h: "med", img: "https://cdn.corenexis.com/files/c/6426636720.png", link: "https://halwa-nation-m4ln.vercel.app/", overlay: true },
+    { t: "Dashboard Concept", c: "UI/UX", h: "med", img: "https://www.image2url.com/r2/default/images/1784671420539-1743934d-18bf-49e4-80c7-2c4b2ea0bedc.png", link: "https://halwa-nation-m4ln.vercel.app/", overlay: true },
     { t: "Portrait Illustration", c: "Illustration", h: "tall", img: "https://cdn.corenexis.com/files/c/2811473720.jpg" },
     { t: "Realistic Character", c: "Pencil Drawings", h: "med", img: "https://cdn.corenexis.com/files/c/4347349720.jpg" },
     { t: "Portrait Series", c: "Pencil Drawings", h: "tall", img: "https://cdn.corenexis.com/files/c/9769171720.jpg" },
@@ -1343,16 +1343,16 @@ function Gallery({ onNavigate }: { onNavigate: (href: string) => void }) {
     { t: "Portrait Collection", c: "Pencil Drawings", h: "med", img: "https://cdn.corenexis.com/files/c/3582461720.jpg" },
     { t: "Drawing Study", c: "Pencil Drawings", h: "tall", img: "https://cdn.corenexis.com/files/c/8458259720.webp" },
     { t: "Pencil Portrait", c: "Pencil Drawings", h: "med", img: "https://cdn.corenexis.com/files/c/2921837720.webp" },
-    { t: "Gaming Logo", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/2344464720.webp" },
-    { t: "Artico Logo", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/9723292720.png" },
-    { t: "Placement Prime Logo", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/2855955720.png" },
-    { t: "pencil Bro", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/1657564720.png" },
-    { t: "CFYG LOGO", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/6178259720.png" },
-    { t: "Cringe Diary Branding", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/4114288720.jpg" },
-    { t: "Art Zone Branding", c: "Branding", h: "tall", img: "https://cdn.corenexis.com/files/c/7453142720.webp" },
-    { t: "WhatsApp Logo", c: "Branding", h: "short", img: "https://cdn.corenexis.com/files/c/5872615720.png" },
-    { t: "Instagram Logo", c: "Branding", h: "med", img: "https://cdn.corenexis.com/files/c/2498329720.png" },
-    { t: "YouTube Logo", c: "Branding", h: "short", img: "https://cdn.corenexis.com/files/c/9773725720.png" },
+    { t: "Gaming Logo", c: "Branding", h: "med", img: "https://www.image2url.com/r2/default/images/1784672049222-6961cf4e-cf62-49eb-949b-fa5488f802ea.webp" },
+    { t: "Artico Logo", c: "Branding", h: "med", img: "https://www.image2url.com/r2/default/images/1784670360775-9a909b6a-2178-4f23-b6b0-2d0b58fef93a.png" },
+    { t: "Placement Prime Logo", c: "Branding", h: "med", img: "https://www.image2url.com/r2/default/images/1784671064897-1b0fa6b7-9202-46cd-8156-e7658d3b60e6.png" },
+    { t: "pencil Bro", c: "Branding", h: "med", img: "https://www.image2url.com/r2/default/images/1784673992403-e16ee606-3a37-49f0-8a82-af1174fe80b2.png" },
+    { t: "CFYG LOGO", c: "Branding", h: "med", img: "https://www.image2url.com/r2/default/images/1784674232155-8f344083-1046-438d-9351-f8b39e6eb265.png" },
+    { t: "Cringe Diary Branding", c: "Branding", h: "med", img: "https://www.image2url.com/r2/default/images/1784673111015-0afe25a0-56b0-4965-8343-c28abf3ee49c.jpeg" },
+    { t: "Art Zone Branding", c: "Branding", h: "tall", img: "https://www.image2url.com/r2/default/images/1784673532346-23f4ddde-90d9-4ed7-978e-fbb906e5daef.webp" },
+    { t: "WhatsApp Logo", c: "Branding", h: "short", img: "https://www.image2url.com/r2/default/images/1784673906358-2d66b1c3-332a-452b-964e-d9a83c86dd80.png" },
+    { t: "Instagram Logo", c: "Branding", h: "med", img: "https://www.image2url.com/r2/default/images/1784674092930-efcf84d5-b419-4218-8e34-c6b18af35020.png" },
+    { t: "YouTube Logo", c: "Branding", h: "short", img: "https://www.image2url.com/r2/default/images/1784674298473-2e3b91b3-c5a9-44c6-9c4f-998a7b4c6135.png" },
     { t: "Pink FF Branding", c: "Branding", h: "tall", img: "https://cdn.corenexis.com/files/c/1864847720.jpg" },
     { t: "Burger King poster", c: "Graphic Design", h: "tall", img: "https://www.image2url.com/r2/default/images/1781235841020-a2f0b5ea-2d75-4b94-bd85-a17456f22293.png" },
     { t: "VLSI Workshop Design", c: "Graphic Design", h: "med", img: "https://cdn.corenexis.com/files/c/2861438720.png" },
