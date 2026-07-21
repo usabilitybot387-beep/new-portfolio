@@ -269,7 +269,7 @@ function FeaturedProjects({ onSelect }: { onSelect: (id: string) => void }) {
       desc: "A credibility-driven artist ecosystem where artists earn recognition before unlocking monetization.",
       bg: "from-[oklch(0.94_0.024_248)] to-[oklch(0.88_0.04_250)]",
       stripe: "bg-primary",
-      img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_banner.png",
+      img: "https://www.image2url.com/r2/default/images/1784667399783-5852595d-f1e2-4e4f-a8c3-d6ad55a4782d.png",
     },
     {
       id: "placement-prime",
@@ -454,7 +454,7 @@ function Artico({ onClose }: { onClose: () => void }) {
               </div>
             </div>
             <div className="rounded-[2.5rem] overflow-hidden bg-white shadow-xl border border-white/70">
-              <img src="https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_banner.png" alt="Artico cover page CTA" className="w-full h-full object-cover" />
+              <img src="https://www.image2url.com/r2/default/images/1784667399783-5852595d-f1e2-4e4f-a8c3-d6ad55a4782d.png" alt="Artico cover page CTA" className="w-full h-full object-cover" />
               <div className="bg-background p-4 flex justify-end border-t border-border">
                 <a
                   href="https://www.figma.com/design/5eUihkSBRN2otrKOELP3jX/artico?node-id=2009-2&t=yFr2ytiGIWjMYrJF-1"
