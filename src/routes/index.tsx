@@ -278,7 +278,7 @@ function FeaturedProjects({ onSelect }: { onSelect: (id: string) => void }) {
       desc: "Helps students measure resume quality and interview readiness with actionable AI feedback.",
       bg: "from-[oklch(0.96_0.01_250)] to-[oklch(0.92_0.02_255)]",
       stripe: "bg-foreground",
-      img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/placement_prime_banner.png",
+      img: "https://www.image2url.com/r2/default/images/1784670165843-bdf1e408-1864-4b9b-8100-070838f1cfa4.png",
     },
     {
       id: "halwa-nation",
@@ -810,7 +810,7 @@ function PlacementPrime({ onClose }: { onClose: () => void }) {
               </div>
             </div>
             <div className="rounded-[2.5rem] overflow-hidden bg-white shadow-xl border border-white/70">
-              <img src="https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/placement_prime_banner.png" alt="Placement Prime cover" className="w-full h-full object-cover" />
+              <img src="https://www.image2url.com/r2/default/images/1784670165843-bdf1e408-1864-4b9b-8100-070838f1cfa4.png" alt="Placement Prime cover" className="w-full h-full object-cover" />
               <div className="bg-background p-4 flex flex-col sm:flex-row sm:justify-end gap-3 border-t border-border">
                 <a
                   href="https://www.figma.com/design/U4mqPzTkRBUu0GUejSQ198/placement-prime?node-id=49-127&t=XRXMFBEpGXEmzom1-1"
