@@ -398,7 +398,8 @@ function Artico({ onClose }: { onClose: () => void }) {
     { t: "Splash Screen", d: "Artiko brand introduction and canvas initialization experience.", img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_screen_splash.png" },
     { t: "Community Join", d: "Onboarding screen showing multiple sign-up options with community verification.", img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_screen_join.png" },
     { t: "User Path Selection", d: "Choice between Artist and Audience personas with personalized discovery paths.", img: "https://www.image2url.com/r2/default/images/1784670588787-4c867f4f-c52f-4a44-98c2-c70f887a7ada.png" },
-    { t: "Art Style Preference", d: "Personalized discovery feed setup with art style selection and preferences.", img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_screen_style.png" },
+    { t: "Art Style Preference", d: "Personalized discovery feed setup with art style selection and preferences.", img: "https://www.image2url.com/r2/default/images/1784710388429-5976ac20-d7ea-4fb7-a8ab-f2f2f4999dd7.png" },
+    { t: "Art Style Preference II", d: "Alternate art style selection view with transparent background and refined layout.", img: "https://www.image2url.com/r2/default/images/1784710509290-68b23e8b-8a84-425d-9d36-06aaaaecd92f.png" },
     { t: "Artwork Discovery", d: "Community artwork showcase and artist profiles with engagement metrics.", img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_screen_discovery.png" },
     { t: "Creator Feed", d: "Artist content feed with trending and curated community highlights.", img: "https://raw.githubusercontent.com/usabilitybot387-beep/new-portfolio/main/public/artico_screen_feed.png" },
   ];
