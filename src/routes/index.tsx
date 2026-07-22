@@ -1335,15 +1335,15 @@ function Gallery({ onNavigate }: { onNavigate: (href: string) => void }) {
 
   const items: GalleryItem[] = [
     { t: "Mobile App UI", c: "UI/UX", h: "tall", img: "https://www.image2url.com/r2/default/images/1784671524249-51c2dbbb-b208-4e89-b473-ea6c70604c33.png", link: "#placement-prime", overlay: true },
-    { t: "Character Illustration", c: "Illustration", h: "tall", img: "https://cdn.corenexis.com/files/c/7984549720.jpg" },
+    { t: "Character Illustration", c: "Illustration", h: "tall", img: "https://www.image2url.com/r2/default/images/1784749191084-0ca71ead-4b01-4cfe-92dc-b865e17c56c7.jpg" },
     { t: "Dashboard Concept", c: "UI/UX", h: "med", img: "https://www.image2url.com/r2/default/images/1784671420539-1743934d-18bf-49e4-80c7-2c4b2ea0bedc.png", link: "https://halwa-nation-m4ln.vercel.app/", overlay: true },
-    { t: "Portrait Illustration", c: "Illustration", h: "tall", img: "https://cdn.corenexis.com/files/c/2811473720.jpg" },
-    { t: "Realistic Character", c: "Pencil Drawings", h: "med", img: "https://cdn.corenexis.com/files/c/4347349720.jpg" },
-    { t: "Portrait Series", c: "Pencil Drawings", h: "tall", img: "https://cdn.corenexis.com/files/c/9769171720.jpg" },
-    { t: "Sketch Study", c: "Pencil Drawings", h: "short", img: "https://cdn.corenexis.com/files/c/2487995720.jpg" },
-    { t: "Portrait Collection", c: "Pencil Drawings", h: "med", img: "https://cdn.corenexis.com/files/c/3582461720.jpg" },
-    { t: "Drawing Study", c: "Pencil Drawings", h: "tall", img: "https://cdn.corenexis.com/files/c/8458259720.webp" },
-    { t: "Pencil Portrait", c: "Pencil Drawings", h: "med", img: "https://cdn.corenexis.com/files/c/2921837720.webp" },
+    { t: "Portrait Illustration", c: "Illustration", h: "tall", img: "https://www.image2url.com/r2/default/images/1784749247889-3471a4ab-7a73-4c70-96f4-baccbbc2c2e9.jpg" },
+    { t: "Realistic Character", c: "Pencil Drawings", h: "med", img: "https://www.image2url.com/r2/default/images/1784749592167-630a42f6-8ca1-4454-8529-6b6e52beff20.webp" },
+    { t: "Portrait Series", c: "Pencil Drawings", h: "tall", img: "https://www.image2url.com/r2/default/images/1784749652389-0f59b6d7-3723-4689-ac37-89ec107c9bc6.jpg" },
+    { t: "Sketch Study", c: "Pencil Drawings", h: "short", img: "https://www.image2url.com/r2/default/images/1784749719176-71226158-629c-4beb-98bb-d9a85bf543dc.jpg" },
+    { t: "Portrait Collection", c: "Pencil Drawings", h: "med", img: "https://www.image2url.com/r2/default/images/1784749772350-1410f639-e092-445a-a90f-cda863815668.jpg" },
+    { t: "Drawing Study", c: "Pencil Drawings", h: "tall", img: "https://www.image2url.com/r2/default/images/1784749820308-1cb5adbd-d59b-4ec5-a926-a51c30bbd310.webp" },
+    { t: "Pencil Portrait", c: "Pencil Drawings", h: "med", img: "https://www.image2url.com/r2/default/images/1784749869471-0d6f9541-c3cf-4c99-83b2-1369ab5d1933.jpg" },
     { t: "Gaming Logo", c: "Branding", h: "med", img: "https://www.image2url.com/r2/default/images/1784672049222-6961cf4e-cf62-49eb-949b-fa5488f802ea.webp" },
     { t: "Artico Logo", c: "Branding", h: "med", img: "https://www.image2url.com/r2/default/images/1784670360775-9a909b6a-2178-4f23-b6b0-2d0b58fef93a.png" },
     { t: "Placement Prime Logo", c: "Branding", h: "med", img: "https://www.image2url.com/r2/default/images/1784671064897-1b0fa6b7-9202-46cd-8156-e7658d3b60e6.png" },
@@ -1354,15 +1354,15 @@ function Gallery({ onNavigate }: { onNavigate: (href: string) => void }) {
     { t: "WhatsApp Logo", c: "Branding", h: "short", img: "https://www.image2url.com/r2/default/images/1784673906358-2d66b1c3-332a-452b-964e-d9a83c86dd80.png" },
     { t: "Instagram Logo", c: "Branding", h: "med", img: "https://www.image2url.com/r2/default/images/1784674092930-efcf84d5-b419-4218-8e34-c6b18af35020.png" },
     { t: "YouTube Logo", c: "Branding", h: "short", img: "https://www.image2url.com/r2/default/images/1784674298473-2e3b91b3-c5a9-44c6-9c4f-998a7b4c6135.png" },
-    { t: "Pink FF Branding", c: "Branding", h: "tall", img: "https://cdn.corenexis.com/files/c/1864847720.jpg" },
+    { t: "Pink FF Branding", c: "Branding", h: "tall", img: "https://www.image2url.com/r2/default/images/1784747582748-c9532167-4afa-4a77-8feb-2d2404e77689.jpg" },
     { t: "Burger King poster", c: "Graphic Design", h: "tall", img: "https://www.image2url.com/r2/default/images/1781235841020-a2f0b5ea-2d75-4b94-bd85-a17456f22293.png" },
-    { t: "VLSI Workshop Design", c: "Graphic Design", h: "med", img: "https://cdn.corenexis.com/files/c/2861438720.png" },
-    { t: "Combo Offer Design", c: "Graphic Design", h: "tall", img: "https://cdn.corenexis.com/files/c/2416631720.png" },
-    { t: "Halwa Product Design", c: "Graphic Design", h: "med", img: "https://cdn.corenexis.com/files/c/5355276720.png" },
-    { t: "Birthday Greeting", c: "Graphic Design", h: "tall", img: "https://cdn.corenexis.com/files/c/8657962720.jpg" },
-    { t: "Birthday Special Offers", c: "Graphic Design", h: "med", img: "https://cdn.corenexis.com/files/c/5641271720.png" },
-    { t: "Halwa Delivery Poster", c: "Graphic Design", h: "short", img: "https://cdn.corenexis.com/files/c/8391319720.png" },
-    { t: "Halwa Order Poster", c: "Graphic Design", h: "med", img: "https://cdn.corenexis.com/files/c/5516334720.png" },
+    { t: "VLSI Workshop Design", c: "Graphic Design", h: "med", img: "https://www.image2url.com/r2/default/images/1784748134392-77547033-af3a-477d-9293-da1d38b403bd.png" },
+    { t: "Combo Offer Design", c: "Graphic Design", h: "tall", img: "https://www.image2url.com/r2/default/images/1784748345152-68908a24-ff69-4a1c-93c6-dc47324bab76.png" },
+    { t: "Halwa Product Design", c: "Graphic Design", h: "med", img: "https://www.image2url.com/r2/default/images/1784748631200-8fd9effd-70b1-4fa0-a86d-a162a657a1d6.png" },
+    { t: "Birthday Greeting", c: "Graphic Design", h: "tall", img: "https://www.image2url.com/r2/default/images/1784748030750-92963abe-07ff-4361-ab52-d7904e5bd8c5.jpg" },
+    { t: "Birthday Special Offers", c: "Graphic Design", h: "med", img: "https://www.image2url.com/r2/default/images/1784748242308-7bb716e4-8f3a-487b-afe1-62b0dfd6a923.png" },
+    { t: "Halwa Delivery Poster", c: "Graphic Design", h: "short", img: "https://www.image2url.com/r2/default/images/1784748489109-5e703719-a79b-4108-8f1e-641167e615c8.png" },
+    { t: "Halwa Order Poster", c: "Graphic Design", h: "med", img: "https://www.image2url.com/r2/default/images/1784749041094-ed90a9de-a04f-4683-8ea1-cbf90bc57d06.png" },
     { t: "Pixel Explained", c: "Video Editing", h: "med", video: "https://www.image2url.com/r2/default/videos/1780876071385-aec130b7-b779-43b9-9190-f1fd1279aecd.mp4" },
     { t: "Cringe diary Intro Draft", c: "Video Editing", h: "med", video: "https://www.image2url.com/r2/default/videos/1780809323036-ad177736-7da6-41e9-b3a2-f290a32f8163.mp4" },
     { t: "Registers", c: "Video Editing", h: "med", video: "https://www.image2url.com/r2/default/videos/1780809012287-69971c74-8dce-4277-b97e-b1eb94180141.mp4" },
@@ -1510,7 +1510,7 @@ function About() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-[1fr_1.3fr] gap-12 items-center">
         <Reveal>
           <div className="rounded-3xl overflow-hidden border border-border bg-card aspect-[4/5] max-w-sm">
-            <img src="https://cdn.corenexis.com/files/c/5196583720.jpg" alt="Nagendra portrait" className="w-full h-full object-cover" />
+            <img src="https://www.image2url.com/r2/default/images/1784747261078-2fec9651-0b94-4476-9552-e38bd0ed07ea.jpg" alt="Nagendra portrait" className="w-full h-full object-cover" />
           </div>
         </Reveal>
         <Reveal delay={120}>
