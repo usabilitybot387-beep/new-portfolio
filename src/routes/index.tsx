@@ -1361,7 +1361,7 @@ function Gallery({ onNavigate }: { onNavigate: (href: string) => void }) {
     { t: "Halwa Product Design", c: "Graphic Design", h: "med", img: "https://www.image2url.com/r2/default/images/1784748631200-8fd9effd-70b1-4fa0-a86d-a162a657a1d6.png" },
     { t: "Birthday Greeting", c: "Graphic Design", h: "tall", img: "https://www.image2url.com/r2/default/images/1784748030750-92963abe-07ff-4361-ab52-d7904e5bd8c5.jpg" },
     { t: "Birthday Special Offers", c: "Graphic Design", h: "med", img: "https://www.image2url.com/r2/default/images/1784748242308-7bb716e4-8f3a-487b-afe1-62b0dfd6a923.png" },
-    { t: "Halwa Delivery Poster", c: "Graphic Design", h: "short", img: "https://www.image2url.com/r2/default/images/1784748489109-5e703719-a79b-4108-8f1e-641167e615c8.png" },
+    { t: "Halwa Delivery Poster", c: "Graphic Design", h: "short", img: "https://www.image2url.com/r2/default/images/1784750644154-8a570c16-c313-43e1-b992-4d672122f04d.png" },
     { t: "Halwa Order Poster", c: "Graphic Design", h: "med", img: "https://www.image2url.com/r2/default/images/1784749041094-ed90a9de-a04f-4683-8ea1-cbf90bc57d06.png" },
     { t: "Pixel Explained", c: "Video Editing", h: "med", video: "https://www.image2url.com/r2/default/videos/1780876071385-aec130b7-b779-43b9-9190-f1fd1279aecd.mp4" },
     { t: "Cringe diary Intro Draft", c: "Video Editing", h: "med", video: "https://www.image2url.com/r2/default/videos/1780809323036-ad177736-7da6-41e9-b3a2-f290a32f8163.mp4" },
