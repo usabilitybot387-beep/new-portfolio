@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "alias": ["nagendra-portfolios.vercel.app"],
   "buildCommand": "npm run build",
   "outputDirectory": "dist/client/client",
   "functions": {
@@ -20,4 +21,4 @@
       "dest": "/api/index.ts"
     }
   ]
-}
+}
